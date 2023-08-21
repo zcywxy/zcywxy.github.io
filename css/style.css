@@ -20,21 +20,16 @@
 ====================================================================
 
  ***/
-
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800|Work+Sans:400,500,700');
-
 /*font-family: 'Poppins', sans-serif;
 font-family: 'Work Sans', sans-serif;*/
 
-@import url('font-awesome.css');
-@import url('flaticon.css');
-@import url('animate.css');
-@import url('owl.css');
-@import url('jquery-ui.css');
-@import url('jquery.fancybox.min.css');
-@import url('jquery.mCustomScrollbar.min.css');
-@import url('custom-animate.css');
-@import url('multi-scroll.css');
+@import url('https://cdn.bootcdn.net/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url('https://cdn.bootcdn.net/ajax/libs/animate.css/3.6.2/animate.min.css');
+@import url('https://cdn.bootcdn.net/ajax/libs/OwlCarousel2/2.2.0/assets/owl.carousel.min.css');
+@import url('https://cdn.bootcdn.net/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css');
+@import url('https://cdn.bootcdn.net/ajax/libs/fancybox/3.5.7/jquery.fancybox.css');
+@import url('https://cdn.bootcdn.net/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css');
+@import url('https://cdn.bootcdn.net/ajax/libs/multiscroll.js/0.2.3/jquery.multiscroll.min.css');
 
 /*** 
 
@@ -1936,3 +1931,423 @@ img{
     opacity: 1 !important;
     transform: translateX(10px);
 }
+
+
+
+
+@-webkit-keyframes rotateme {
+    0% {
+        -webkit-transform: rotate(0deg);
+        opacity: 1;
+      }
+
+    50% {
+        -webkit-transform: rotate(180deg);
+        opacity: 0.7;
+      }
+    100% {
+        -webkit-transform: rotate(360deg);
+        opacity: 1;
+      }
+}
+@-moz-keyframes rotateme {
+    0% {
+        -moz-transform: rotate(0deg);
+        opacity: 1;
+      }
+
+    50% {
+        -moz-transform: rotate(180deg);
+        opacity: 0.7;
+      }
+    100% {
+        -moz-transform: rotate(360deg);
+        opacity: 1;
+      }
+}
+@-o-keyframes rotateme {
+    0% {
+        -o-transform: rotate(0deg);
+        opacity: 1;
+      }
+
+    50% {
+        -o-transform: rotate(180deg);
+        opacity: 0.7;
+      }
+    100% {
+        -o-transform: rotate(360deg);
+        opacity: 1;
+      }
+}
+
+@keyframes rotateme {
+    
+     0% {
+        transform: rotate(0deg);
+        opacity: 1;
+      }
+
+    50% {
+        transform: rotate(180deg);
+      }
+    100% {
+        transform: rotate(360deg);
+        opacity: 1;
+      }
+}
+
+
+.rotate-me{
+    animation-name: rotateme; 
+    animation-duration: 15s; 
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  
+  -webkit-animation-name: rotateme; 
+    -webkit-animation-duration: 15s; 
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+  
+  -moz-animation-name: rotateme; 
+    -moz-animation-duration: 15s; 
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+  
+  -ms-animation-name: rotateme; 
+    -ms-animation-duration: 15s; 
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+  
+  -o-animation-name: rotateme; 
+    -o-animation-duration: 15s; 
+    -o-animation-iteration-count: infinite;
+    -o-animation-timing-function: linear;
+}
+
+/* Bob Up Down*/
+@-webkit-keyframes float_up_down {
+  0% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    opacity: 1;
+  }
+
+  50% {
+    -webkit-transform: translateY(30px);
+    transform: translateY(30px);
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes float_up_down {
+  0% {
+    transform: translateY(0px);
+    transform: translateY(0px);
+    opacity: 1;
+  }
+
+  50% {
+    transform: translateY(30px);
+    transform: translateY(30px);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(0px);
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+.float-up-down{
+    animation-name: float_up_down; 
+    animation-duration: 5s; 
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    
+    -webkit-animation-name: float_up_down; 
+    -webkit-animation-duration: 5s; 
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    
+    -moz-animation-name: float_up_down; 
+    -moz-animation-duration: 5s; 
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    
+    -ms-animation-name: float_up_down; 
+    -ms-animation-duration: 5s; 
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+    
+    -o-animation-name: float_left_right; 
+    -o-animation-duration: 5s; 
+    -o-animation-iteration-count: infinite;
+    -o-animation-timing-function: linear;
+}
+
+/* Bob */
+@-webkit-keyframes float_left_right {
+  0% {
+    -webkit-transform: translateX(-100px);
+    transform: translateX(-100px);
+    opacity: 1;
+  }
+
+  50% {
+    -webkit-transform: translateX(100px);
+    transform: translateX(100px);
+    opacity: 0.40;
+  }
+
+  100% {
+    -webkit-transform: translateX(-100px);
+    transform: translateX(-100px);
+    opacity: 1;
+  }
+}
+
+@keyframes float_left_right {
+  0% {
+    -webkit-transform: translateX(-100px);
+    transform: translateX(-100px);
+    opacity: 1;
+  }
+
+  50% {
+    -webkit-transform: translateX(100px);
+    transform: translateX(100px);
+    opacity: 0.40;
+  }
+
+  100% {
+    -webkit-transform: translateX(-100px);
+    transform: translateX(-100px);
+    opacity: 1;
+  }
+}
+
+.float-left-right{
+    animation-name: float_left_right; 
+    animation-duration: 30s; 
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  
+  -webkit-animation-name: float_left_right; 
+    -webkit-animation-duration: 30s; 
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+  
+  -moz-animation-name: float_left_right; 
+    -moz-animation-duration: 30s; 
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+  
+  -ms-animation-name: float_left_right; 
+    -ms-animation-duration: 30s; 
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+  
+  -o-animation-name: float_left_right; 
+    -o-animation-duration: 30s; 
+    -o-animation-iteration-count: infinite;
+    -o-animation-timing-function: linear;
+}
+
+@-webkit-keyframes float_left_right_two {
+  0% {
+    -webkit-transform: translateX(-30px);
+    opacity: 1;
+  }
+
+  50% {
+    -webkit-transform: translateX(0px);
+    opacity: 0.80;
+  }
+
+  100% {
+    -webkit-transform: translateX(-30px);
+    opacity: 1;
+  }
+}
+
+@keyframes float_left_right_two {
+  0% {
+    transform: translateX(-30px);
+    opacity: 1;
+  }
+
+  50% {
+    transform: translateX(0px);
+    opacity: 0.80;
+  }
+
+  100% {
+    transform: translateX(-30px);
+    opacity: 1;
+  }
+}
+
+.float-left-right-two{
+    animation-name: float_left_right_two; 
+    animation-duration: 5s; 
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  
+  -webkit-animation-name: float_left_right_two; 
+    -webkit-animation-duration: 5s; 
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+  
+  -moz-animation-name: float_left_right_two; 
+    -moz-animation-duration: 5s; 
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+  
+  -ms-animation-name: float_left_right_two; 
+    -ms-animation-duration: 5s; 
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+  
+  -o-animation-name: float_left_right_two; 
+    -o-animation-duration: 5s; 
+    -o-animation-iteration-count: infinite;
+    -o-animation-timing-function: linear;
+}
+
+
+@-webkit-keyframes zoom-fade {
+  0% {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+
+  50% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  100% {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+}
+
+@keyframes zoom-fade {
+  0% {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+
+  50% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  100% {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+}
+
+.zoom-fade{
+    animation-name: zoom-fade; 
+    animation-duration: 3s; 
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  
+  -webkit-animation-name: zoom-fade; 
+    -webkit-animation-duration: 3s; 
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+  
+  -moz-animation-name: zoom-fade; 
+    -moz-animation-duration: 3s; 
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+  
+  -ms-animation-name: zoom-fade; 
+    -ms-animation-duration: 3s; 
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+  
+  -o-animation-name: zoom-fade; 
+    -o-animation-duration: 3s; 
+    -o-animation-iteration-count: infinite;
+    -o-animation-timing-function: linear;
+}
+
+
+	/*
+  	Flaticon icon font: Flaticon
+  	Creation date: 29/08/2018 18:34
+  	*/
+
+	  @font-face {
+		font-family: "Flaticon";
+		src: url("../fonts/Flaticon.eot");
+		src: url("../fonts/Flaticon.eot?#iefix") format("embedded-opentype"),
+			 url("../fonts/Flaticon.woff") format("woff"),
+			 url("../fonts/Flaticon.ttf") format("truetype"),
+			 url("../fonts/Flaticon.svg#Flaticon") format("svg");
+		font-weight: normal;
+		font-style: normal;
+	  }
+	  
+	  @media screen and (-webkit-min-device-pixel-ratio:0) {
+		@font-face {
+		  font-family: "Flaticon";
+		  src: url("../fonts/Flaticon.svg#Flaticon") format("svg");
+		}
+	  }
+	  
+	  [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+	  [class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+		font-family: Flaticon;
+	  font-style: normal;
+	  }
+	  
+	  .flaticon-multimedia:before { content: "\f100"; }
+	  .flaticon-drawing:before { content: "\f101"; }
+	  .flaticon-drawing-1:before { content: "\f102"; }
+	  .flaticon-layers:before { content: "\f103"; }
+	  .flaticon-cogwheel:before { content: "\f104"; }
+	  .flaticon-construction:before { content: "\f105"; }
+	  .flaticon-can:before { content: "\f106"; }
+	  .flaticon-signs:before { content: "\f107"; }
+	  .flaticon-favorite:before { content: "\f108"; }
+	  .flaticon-arrows:before { content: "\f109"; }
+	  .flaticon-note:before { content: "\f10a"; }
+	  .flaticon-computer:before { content: "\f10b"; }
+	  .flaticon-phone-settings:before { content: "\f10c"; }
+	  .flaticon-technology:before { content: "\f10d"; }
+	  .flaticon-envelope:before { content: "\f10e"; }
+	  .flaticon-note-1:before { content: "\f10f"; }
+	  .flaticon-social:before { content: "\f110"; }
+	  .flaticon-left-quotes-sign:before { content: "\f111"; }
+	  .flaticon-businessman:before { content: "\f112"; }
+	  .flaticon-edit:before { content: "\f113"; }
+	  .flaticon-curriculum:before { content: "\f114"; }
+	  .flaticon-layers-1:before { content: "\f115"; }
+	  .flaticon-tools:before { content: "\f116"; }
+	  .flaticon-set-square:before { content: "\f117"; }
+	  .flaticon-blog:before { content: "\f118"; }
+	  .flaticon-send-mail:before { content: "\f119"; }
+	  .flaticon-smartphone:before { content: "\f11a"; }
+	  .flaticon-book:before { content: "\f11b"; }
+	  .flaticon-case:before { content: "\f11c"; }
+	  .flaticon-vector:before { content: "\f11d"; }
+	  .flaticon-pen-tool:before { content: "\f11e"; }
+	  .flaticon-coding:before { content: "\f11f"; }
+	  .flaticon-phone:before { content: "\f120"; }
+	  .flaticon-tools-and-utensils:before { content: "\f121"; }
+	  .flaticon-folder:before { content: "\f122"; }
+	  .flaticon-web-design:before { content: "\f123"; }
+	  .flaticon-photo-camera:before { content: "\f124"; }
